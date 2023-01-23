@@ -1,0 +1,216 @@
+arrays
+----searching
+----sorting
+====dynamic_arrays
+====string
+    ----pattern_searching
+    ----palindrome_searching(manacher algorithm)
+====hash_tables
+
+links
+boolean_and_bitsets
+----set() set(position)
+----reset() reset(position)
+----flip() flip(position)
+----count()
+----size()
+
+trees - height(key) depth(key) lca(key1, key2) path(key)
+----lists - insert(key, previous_key)  delete(key)
+    ----directed_lists
+        ----stacks - push(key)  pop()
+        ----queues - push(key)  pop()
+    ----undirected_lists
+        ----double_ended_queues - push_back(key)  pop_back()  push_front(key)  pop_front()
+----binary_trees
+    ----binary_search_trees (undirected)
+        ----splay_trees
+        ----avl_trees
+        ----red_black_trees
+----generic_trees
+    ----multiway_search_trees
+        ----b_trees
+
+pseudo_trees
+    ----threaded_binary_trees
+    ----b+_trees
+    ----disjoint_sets
+    ----heaps
+        ----binary_heaps, d-ary_heaps, binomial_heaps, fibonacci_heaps
+
+graphs  depth_first_search()
+        breadth_first_search()
+        shortest_path::dijkstra()
+        all_pairs_of_shortest_path::floyd_warshall_algorithm()
+        minimum_spanning_trees::kruskal()  minimum_spanning_trees::prim()
+----undirected_unweighted
+----directed_unweighted
+----undirected_weighted
+----directed_weighted
+
+------------------------------------------------advanced_dsa
+huffman trees
+tries
+compressed tries
+suffix trees
+suffix arrays
+
+segment trees
+sorted segment trees / merge sort tree
+persistent segment trees
+binary indexed trees / fenwick tree
+sqrt decomposition
+mo's algorithim
+heavy light decomposition
+
+articulation points
+strongly connected components - tarjan's algorithm, khosaraju's algorithm
+minimum & maximum flows - dinic's algorithm
+euler tour | tree flatening
+
+dynamic programming
+dp bitmasking
+sum over subset dp
+dp on trees
+
+game theory
+matrix exponentiation
+fast fourier transform
+geometry
+combinatorics
+linear algebra
+number theory
+
+------------------------------------------------------bit manipulation
+boolean algebra
+shift operators
+and, or, xor operator
+bit masking
+bitsets
+--set_bit
+--unset_bit
+--toggle_bit
+--get_bit
+
+------------------------------------------------------number theory
+binary exponentiation
+modular arithmetic
+eucledean algorithim
+
+basis representation theorem
+fermat's little theorem
+sieve of eratostenes
+extended eucledean algorithim
+linear diophantine equation
+miller rabin
+euler totient function
+inverse of number
+newton raphson method
+
+-------------------------------------------------------
+object pointer array is better than object array
+-swapping takes O(1) time complexity
+
+-------------------------------------------------------tree
+height = {if(node == leaf) height = 0; else height = max(node.left, node.right)+1;}
+level || depth = {if(node == root) level = 0; else if(node != leaf) {level += 1; node = node.nextlevel}
+
+edges + 1 = nodes
+there exists only one path between two nodes of a tree
+if(maxnodes = n) then maxheight = log2(n)
+
+-------------------------------------------------------binary tree
+the maximum number of nodes possible
+=> on any level i is 2^i where i>=0
+=> of a binary tree of height h is 2(2^h - 1)
+
+the minimum number of nodes possible
+=> of a binary tree of height h is h
+
+for a non empty binary tree
+let n0 be nodes with no children
+let n2 be nodes with 2 children
+then n2 + 1 = n0
+
+a binary tree with n nodes contains n+1 null links
+
+level order array representation of binary tree
+=> root = array[1]
+=> left child of i = array[2*i]
+=> right child of i = array[(2*i)+1]
+=> parent of i = array[i/2]
+
+------------------------------------------------------strict binary tree
+strict binary tree - every node in the binary tree has either two or no children
+=> with n non leaf nodes has n+1 leaf nodes
+=> with n leaf nodes always has 2n-1 nodes
+
+------------------------------------------------------complete binary tree
+------------------------------------------------------balanced binary tree
+------------------------------------------------------binary search tree
+red-black tree (properties)
+1) every node is either red or black 
+2) the root node and null nodes are black
+3) every node red node has black children
+4) all paths from a node to its null descendents must contain same number of black nodes
+
+----insertion
+insert the new_node and color it red (4 possible scenarios)
+    1: new_node = root                            color the new_node as black
+    2: new_node.uncle.color = red                 recolor parent grandparent and uncle
+    3: new_node.uncle.color = black (triangle)    rotate new_node.parent in the opposite direction of new_node 
+    (parent = left_child && new_node = right_child) || (parent = right_child && new_node = left_child)
+    4: new_node.uncle.color = black (line)        rotate new_node.grandparent in the opposite direction of new_node and recolor parent and grandparent 
+    (parent = left_child && new_node = left_child) || (parent = right_child && new_node = right_child)
+
+----deletion
+
+------------------------------------------------------generic search tree
+b trees (properties)
+1) must contain ceil(m/2) children
+2) root node can have minimum two children
+3) all leaf node must be in same level
+
+------------------------------------------------------graph
+multi-edge    weighted    directed  |
+0             0           0         |   adjacency list of pairs which denotes an edge(key, pointer)
+0             0           1         |   adjacency list of pairs which denotes an edge(key, pointer)
+0             1           0         |
+0             1           1         |
+1             0           0         |   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+1             0           1         |   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+1             1           0         |
+1             1           1         |
+
+a simple graph with at least two vertices has atleast two vertices of same degree 
+handshaking theorem = sum of degree of all vertices in a graph is equal to 2 * number of edges [ sum(degree(vi)) = 2 * e ]
+for a digraph [ indegree(graph g) = outdegree(graph g) ]
+if a graph has exactly two vertices of odd degree, there must be a path joining these two vertices
+the minimum number of edges in a connected graph with n vertices is n-1
+the minimum number of edges in a simple graph with n vertices is n-k where k is the number of connected components
+the maximum number of edges in a simple graph with n vertices and k components is (n-k)*(n-k-1)/2
+
+--degree of a vertex
+--connected components in a graph
+--number of vertices in a connected component
+--number of edges in a connected component
+
+bipartite graph
+complete bipartite graph
+isomorphism && isomorphism_invariant
+complement of a graph
+
+subgraph
+--proper subgraph
+--spanning subgraph
+--induced subgraph
+--vertex deleted subgraph
+--edge deleted subgraph
+
+                repeated_edge   repeated_vertex   starting_vertex = ending_vertex
+closed walk     allowed         allowed           no
+open walk       allowed         allowed           yes
+trail           not-allowed     allowed           no
+circuit         not-allowed     allowed           yes
+path            not-allowed     not-allowed       no
+cycle           not-allowed     not-allowed       yes
