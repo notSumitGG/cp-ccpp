@@ -20,11 +20,10 @@ Contains problems related to :
 - [Leetcode](https://leetcode.com/)  
 - [Hackerearth](https://www.hackerearth.com/practice/)  
 - [SPOJ](https://www.spoj.com/)  
-- [GeeksforGeeks](https://www.geeksforgeeks.org/)  
 - [Hackerrank](https://www.hackerrank.com/dashboard)  
 - [CodeChef](https://www.codechef.com/)  
 - [Atcoder](https://atcoder.jp/)  
-- [CodeForces](https://codeforces.com/)
+- [CodeForces](https://codeforces.com/)  
 
 
 ## Author

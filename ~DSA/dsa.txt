@@ -1,54 +1,59 @@
 arrays
-----searching
-----sorting
-====dynamic_arrays
-====string
-    ----pattern_searching
-    ----palindrome_searching(manacher algorithm)
-====hash_tables
+    - searching
+    - sorting
+    ~ dynamic_arrays
+    ~ string
+        - pattern_searching
+        - palindrome_searching(manacher algorithm)
+    ~ hashing
+        - direct_addressing
+        - chaining
+        - permutation_hashing
+        - set_hashing
+        - xor_hashing
 
-links
 boolean_and_bitsets
-----set() set(position)
-----reset() reset(position)
-----flip() flip(position)
-----count()
-----size()
+- set() set(position)
+- reset() reset(position)
+- flip() flip(position)
+- count()
+- size()
 
+****links****
 trees - height(key) depth(key) lca(key1, key2) path(key)
-----lists - insert(key, previous_key)  delete(key)
-    ----directed_lists
-        ----stacks - push(key)  pop()
-        ----queues - push(key)  pop()
-    ----undirected_lists
-        ----double_ended_queues - push_back(key)  pop_back()  push_front(key)  pop_front()
-----binary_trees
-    ----binary_search_trees (undirected)
-        ----splay_trees
-        ----avl_trees
-        ----red_black_trees
-----generic_trees
-    ----multiway_search_trees
-        ----b_trees
+- lists - insert(key, previous_key)  delete(key)
+    - directed_lists
+        - stacks - push(key)  pop()
+        - queues - push(key)  pop()
+    - undirected_lists
+        - double_ended_queues - push_back(key)  pop_back()  push_front(key)  pop_front()
+- binary_trees
+    - binary_search_trees (undirected)
+        - splay_trees
+        - avl_trees
+        - red_black_trees
+- generic_trees
+    - multiway_search_trees
+        - b_trees
 
 pseudo_trees
-    ----threaded_binary_trees
-    ----b+_trees
-    ----disjoint_sets
-    ----heaps
-        ----binary_heaps, d-ary_heaps, binomial_heaps, fibonacci_heaps
+    - threaded_binary_trees
+    - b+_trees
+    - disjoint_sets
+    - heaps
+        - binary_heaps, d-ary_heaps, binomial_heaps, fibonacci_heaps
 
 graphs  depth_first_search()
         breadth_first_search()
         shortest_path::dijkstra()
         all_pairs_of_shortest_path::floyd_warshall_algorithm()
         minimum_spanning_trees::kruskal()  minimum_spanning_trees::prim()
-----undirected_unweighted
-----directed_unweighted
-----undirected_weighted
-----directed_weighted
+- undirected_unweighted
+- directed_unweighted
+- undirected_weighted
+- directed_weighted
 
-------------------------------------------------advanced_dsa
+=============================================================== advanced_dsa
 huffman trees
 tries
 compressed tries
@@ -81,18 +86,18 @@ combinatorics
 linear algebra
 number theory
 
-------------------------------------------------------bit manipulation
+=============================================================== bit manipulation
 boolean algebra
 shift operators
 and, or, xor operator
 bit masking
 bitsets
---set_bit
---unset_bit
---toggle_bit
---get_bit
+- set_bit
+- unset_bit
+- toggle_bit
+- get_bit
 
-------------------------------------------------------number theory
+=============================================================== number theory
 binary exponentiation
 modular arithmetic
 eucledean algorithim
@@ -107,19 +112,19 @@ euler totient function
 inverse of number
 newton raphson method
 
--------------------------------------------------------
+===============================================================
 object pointer array is better than object array
 -swapping takes O(1) time complexity
 
--------------------------------------------------------tree
-height = {if(node == leaf) height = 0; else height = max(node.left, node.right)+1;}
-level || depth = {if(node == root) level = 0; else if(node != leaf) {level += 1; node = node.nextlevel}
+===============================================================tree
+height = if(node == leaf) height = 0; else height = max(node.left, node.right)+1;
+level || depth = if(node == root) level = 0; else if(node != leaf) {level += 1; node = node.nextlevel}
 
 edges + 1 = nodes
 there exists only one path between two nodes of a tree
 if(maxnodes = n) then maxheight = log2(n)
 
--------------------------------------------------------binary tree
+===============================================================binary tree
 the maximum number of nodes possible
 => on any level i is 2^i where i>=0
 => of a binary tree of height h is 2(2^h - 1)
@@ -140,21 +145,21 @@ level order array representation of binary tree
 => right child of i = array[(2*i)+1]
 => parent of i = array[i/2]
 
-------------------------------------------------------strict binary tree
+===============================================================strict binary tree
 strict binary tree - every node in the binary tree has either two or no children
 => with n non leaf nodes has n+1 leaf nodes
 => with n leaf nodes always has 2n-1 nodes
 
-------------------------------------------------------complete binary tree
-------------------------------------------------------balanced binary tree
-------------------------------------------------------binary search tree
+===============================================================complete binary tree
+===============================================================balanced binary tree
+===============================================================binary search tree
 red-black tree (properties)
 1) every node is either red or black 
 2) the root node and null nodes are black
 3) every node red node has black children
 4) all paths from a node to its null descendents must contain same number of black nodes
 
-----insertion
+- insertion
 insert the new_node and color it red (4 possible scenarios)
     1: new_node = root                            color the new_node as black
     2: new_node.uncle.color = red                 recolor parent grandparent and uncle
@@ -163,15 +168,15 @@ insert the new_node and color it red (4 possible scenarios)
     4: new_node.uncle.color = black (line)        rotate new_node.grandparent in the opposite direction of new_node and recolor parent and grandparent 
     (parent = left_child && new_node = left_child) || (parent = right_child && new_node = right_child)
 
-----deletion
+- deletion
 
-------------------------------------------------------generic search tree
+===============================================================generic search tree
 b trees (properties)
 1) must contain ceil(m/2) children
 2) root node can have minimum two children
 3) all leaf node must be in same level
 
-------------------------------------------------------graph
+===============================================================graph
 multi-edge    weighted    directed  |
 0             0           0         |   adjacency list of pairs which denotes an edge(key, pointer)
 0             0           1         |   adjacency list of pairs which denotes an edge(key, pointer)

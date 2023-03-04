@@ -1,0 +1,63 @@
+-------------------------------------------------cp_problems
+travelling salesman problem
+topological sort
+bisection method
+chinese remainder theorem
+binary tree from inorder and preorder
+kth smallest element in a search tree
+minimize the height
+balanced binary tree check
+dnf sort
+generic linked lists
+sorting list
+magic square
+hanging ball problem
+expression solver
+van eck sequence
+roman converter
+unique longest substring
+min change palindrome conversion
+prime conversion
+can N be represented by K prime no's
+minimum_spanning_trees::prims_algorithm
+shortest_path::bellman_ford_algorithm
+
+utilities problem
+round robin tournaments
+networking problem
+Gilbert–Johnson–Keerthi distance algorithm
+LU decomposition
+jacobi solver
+SF computation
+maze generation
+
+-------------------------------------------------ds_problem
+binary_search_trees::delete
+avl_trees::insert
+avl_trees::delete
+
+threaded_binary_trees::insert
+binary_search_trees::range_print
+
+linked----dynamic_array----array of dynamic_arrays
+binary_heaps::extract
+binary_heaps::insert
+binary_heaps::delete
+binary_heaps::peek
+binary_heaps::sift_up
+binary_heaps::sift_down
+
+------------------------------------------------------cmi
+combinatorics
+geometry
+functional equations
+polynomials
+algebra
+probability
+real analysis
+complex numbers
+vectors
+coordinate geometry
+trigonometry
+number theory
+matrices

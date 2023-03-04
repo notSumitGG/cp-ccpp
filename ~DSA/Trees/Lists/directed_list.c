@@ -74,6 +74,18 @@ void popback(){
     free(tem1);
     (*temp).link = NULL;
 }
+void reverse(){
+    struct Node *temp = head;
+    struct Node *next = (*head).link;
+    (*temp).link = NULL;
+
+    while(next != NULL){
+        temp = next;
+        next = (*temp).link;       //(*next).link
+        (*temp).link = head;
+        head = temp;
+    }
+}
 void display(){
     Node *temp = head;
     printf("List is : \n");
@@ -115,6 +127,9 @@ int main(){
         else if(args[0] == 'b'){
             scanf(" %d", &x);
             pushback(x);
+        }
+        else if(args[0]=='r'){
+            reverse();
         }
         else{
             scanf(" %d", &x);
