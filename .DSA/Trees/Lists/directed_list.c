@@ -86,6 +86,7 @@ void reverse(){
         head = temp;
     }
 }
+
 void display(){
     Node *temp = head;
     printf("List is : \n");
@@ -104,7 +105,7 @@ int toInteger(char key[]){
     return res;
 }
 int main(){
-    char args[16] = {'\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0'};
+    char args[16] = {0};
     int x;
 
     while(args[0]!='s' && args[1]!='t' && args[2]!='o' && args[3]!='p'){

@@ -32,11 +32,11 @@ public:
         up = vector<vector<int>>(n, vector<int>(LOG));
         dfs(t, root);
 
-        for(int i=0; i<n; ++i) {
-            for(int j=0; j<LOG; ++i)
-                cout << up[i][j];
-            cout << endl;
-        }
+        // for(int i=0; i<n; ++i) {
+        //     for(int j=0; j<LOG; ++i)
+        //         cout << up[i][j];
+        //     cout << endl;
+        // }
     }
 
     int height(int key) {
@@ -51,7 +51,7 @@ public:
         if(lvl[key] < k)
             return -1;
         
-        for(int i=0; i<LOG; ++i){
+        for(int i=0; i<LOG; ++i) {
             if((1<<i) & k)
                 key = up[key][i];
         }
