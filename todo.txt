@@ -1,5 +1,35 @@
 -------------------------------------------------cp_problems
-travelling salesman problem
+divide and conquer matrix multiplication: strassen's algorithm
+greedy algos
+    fractional knapsack problem
+    travelling salesman problem
+    job sequencing with deadline
+    graph coloring
+    finding minimum cost of spanning tree
+dynamic programming
+    0/1 knapsack problem
+    matrix chain multiplication
+    travelling salesman problem
+    backtracking n queens
+    knights tour on chess board
+string matching problem
+    naive algorithm
+    string matching with finite automata
+    knuth morris pratt algorithm
+graph algorithms
+    single source shortest path - dijkstra algorithm
+    all pair of shortest path - floyd warshall algorithm
+    network flows
+    maximum flows - ford fulkerson algorithm
+    push re-label algorithm
+    minimum cost flows - cycle cancelling algorithm
+approximation and randomized algorithms
+    the vertex covering problem
+    k-center clustering 
+    randomized algorithms 
+        the hiring problem 
+        finding the global minimum
+
 topological sort
 bisection method
 chinese remainder theorem

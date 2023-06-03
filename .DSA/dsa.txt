@@ -1,3 +1,9 @@
+primitive_types
+    int
+    float
+    char
+    bool
+
 arrays
     - searching
     - sorting
@@ -11,13 +17,12 @@ arrays
         - permutation_hashing
         - set_hashing
         - xor_hashing
-
-boolean_and_bitsets
-- set() set(position)
-- reset() reset(position)
-- flip() flip(position)
-- count()
-- size()
+    ~ bitsets
+        - set() set(position)
+        - reset() reset(position)
+        - flip() flip(position)
+        - count()
+        - size()
 
 ****links****
 trees - height(key) depth(key) lca(key1, key2) path(key)
@@ -43,15 +48,16 @@ pseudo_trees
     - heaps
         - binary_heaps, d-ary_heaps, binomial_heaps, fibonacci_heaps
 
-graphs  depth_first_search()
-        breadth_first_search()
-        shortest_path::dijkstra()
-        all_pairs_of_shortest_path::floyd_warshall_algorithm()
-        minimum_spanning_trees::kruskal()  minimum_spanning_trees::prim()
-- undirected_unweighted
-- directed_unweighted
-- undirected_weighted
-- directed_weighted
+graphs
+    - undirected_unweighted
+    - directed_unweighted
+    - undirected_weighted
+    - directed_weighted
+depth_first_search()
+breadth_first_search()
+shortest_path::dijkstra()
+all_pairs_of_shortest_path::floyd_warshall_algorithm()
+minimum_spanning_trees::kruskal()  minimum_spanning_trees::prim()
 
 =============================================================== advanced_dsa
 huffman trees
@@ -144,6 +150,9 @@ level order array representation of binary tree
 => left child of i = array[2*i]
 => right child of i = array[(2*i)+1]
 => parent of i = array[i/2]
+
+for n nodes number of possible binary trees:
+T(n) = (2nCn)/(n+1)
 
 =============================================================== strict binary tree
 strict binary tree - every node in the binary tree has either two or no children

@@ -3,7 +3,7 @@
 #define d 256
 #define q 1000000007
 
-void search(char pat[], char txt[]){
+void rabinkarp(char pat[], char txt[]){
 	int m = strlen(pat);
 	int n = strlen(txt);
 	int i, j;
