@@ -1,5 +1,4 @@
 -------------------------------------------------cp_problems
-divide and conquer matrix multiplication: strassen's algorithm
 greedy algos
     fractional knapsack problem
     travelling salesman problem
@@ -12,10 +11,6 @@ dynamic programming
     travelling salesman problem
     backtracking n queens
     knights tour on chess board
-string matching problem
-    naive algorithm
-    string matching with finite automata
-    knuth morris pratt algorithm
 graph algorithms
     single source shortest path - dijkstra algorithm
     all pair of shortest path - floyd warshall algorithm
@@ -23,12 +18,18 @@ graph algorithms
     maximum flows - ford fulkerson algorithm
     push re-label algorithm
     minimum cost flows - cycle cancelling algorithm
+
 approximation and randomized algorithms
     the vertex covering problem
     k-center clustering 
     randomized algorithms 
         the hiring problem 
         finding the global minimum
+divide and conquer matrix multiplication: strassen's algorithm
+string matching problem
+    naive algorithm
+    string matching with finite automata
+    knuth morris pratt algorithm
 
 topological sort
 bisection method
@@ -60,6 +61,61 @@ LU decomposition
 jacobi solver
 SF computation
 maze generation
+
+=============================================================== advanced_dsa
+huffman trees
+tries
+compressed tries
+suffix trees
+suffix arrays
+
+segment trees
+sorted segment trees / merge sort tree
+persistent segment trees
+binary indexed trees / fenwick tree
+sqrt decomposition
+mo's algorithim
+heavy light decomposition
+
+articulation points
+strongly connected components - tarjan's algorithm, khosaraju's algorithm
+minimum & maximum flows - dinic's algorithm
+euler tour | tree flatening
+
+dynamic programming
+dp bitmasking
+sum over subset dp
+dp on trees
+
+game theory
+matrix exponentiation
+fast fourier transform
+geometry
+combinatorics
+linear algebra
+number theory
+
+=============================================================== number theory
+binary exponentiation
+modular arithmetic
+eucledean algorithim
+
+booth's algorithm
+division algorithm
+  [slow]
+    restoring division
+    non restoring division
+  [fast]
+    division by series expansion
+    newton raphson division
+basis representation theorem
+fermat's little theorem
+sieve of eratostenes
+extended eucledean algorithim
+linear diophantine equation
+miller rabin
+euler totient function
+inverse of number
 
 -------------------------------------------------ds_problem
 binary_search_trees::delete

@@ -1,18 +1,20 @@
 
 # cp
 
-Competitive Programming repository (contains codes for standerd problems)  
+Competitive Programming repository  
 Contains problems related to : 
-- Arrays
-- Bit_Manipulation
-- Recursion & Backtracking
-- Trees 
-- Graphs
-- Number_Theory
-- Dynamic_Programming
+`Arrays`
+`Bit_Manipulation`
+`Trees & Lists`
+`Graphs`
+`Number_Theory`
+`Recursion & Backtracking`
+`Greedy_Algorithms`
+`Dynamic_Programming`
 
 
-
+# Standerd Problem Solutions
+You can find solutions to standerd problems in the [`DSA`](https://github.com/sumit-modak/cp/tree/master/DSA) directory
 
 
 ## CP Websites
@@ -24,9 +26,4 @@ Contains problems related to :
 - [CodeChef](https://www.codechef.com/)  
 - [Atcoder](https://atcoder.jp/)  
 - [CodeForces](https://codeforces.com/)  
-
-
-## Author
-
-#### [@sumit-modak](https://github.com/sumit-modak)
 

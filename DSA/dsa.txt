@@ -59,39 +59,6 @@ shortest_path::dijkstra()
 all_pairs_of_shortest_path::floyd_warshall_algorithm()
 minimum_spanning_trees::kruskal()  minimum_spanning_trees::prim()
 
-=============================================================== advanced_dsa
-huffman trees
-tries
-compressed tries
-suffix trees
-suffix arrays
-
-segment trees
-sorted segment trees / merge sort tree
-persistent segment trees
-binary indexed trees / fenwick tree
-sqrt decomposition
-mo's algorithim
-heavy light decomposition
-
-articulation points
-strongly connected components - tarjan's algorithm, khosaraju's algorithm
-minimum & maximum flows - dinic's algorithm
-euler tour | tree flatening
-
-dynamic programming
-dp bitmasking
-sum over subset dp
-dp on trees
-
-game theory
-matrix exponentiation
-fast fourier transform
-geometry
-combinatorics
-linear algebra
-number theory
-
 =============================================================== bit manipulation
 boolean algebra
 shift operators
@@ -102,21 +69,6 @@ bitsets
 - unset_bit
 - toggle_bit
 - get_bit
-
-=============================================================== number theory
-binary exponentiation
-modular arithmetic
-eucledean algorithim
-
-basis representation theorem
-fermat's little theorem
-sieve of eratostenes
-extended eucledean algorithim
-linear diophantine equation
-miller rabin
-euler totient function
-inverse of number
-newton raphson method
 
 ===============================================================
 object pointer array is better than object array
