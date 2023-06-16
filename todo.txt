@@ -4,6 +4,8 @@ greedy algos
     travelling salesman problem
     job sequencing with deadline
     graph coloring
+    m coloring decision problem
+    m coloring optimization problem | chromatic number
     finding minimum cost of spanning tree
 dynamic programming
     0/1 knapsack problem
