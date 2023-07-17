@@ -2,6 +2,10 @@
 #include<algorithm>
 using namespace std;
 
+// “Given ‘n’ number of jobs with ending time, they need to 
+// be scheduled in such a way that maximum profit is 
+// received within the maximum deadline”.
+
 struct job {        // default time taken is 1 unit
     int profit;     // profit after completing the job
     int deadline;   // maximum deadline to complete the job

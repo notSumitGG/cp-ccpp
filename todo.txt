@@ -1,8 +1,6 @@
 -------------------------------------------------cp_problems
 greedy algos
     travelling salesman problem
-    job sequencing with deadline
-    graph coloring
     m coloring decision problem
     m coloring optimization problem | chromatic number
     finding minimum cost of spanning tree
@@ -16,7 +14,7 @@ graph algorithms
     maximum flows - ford fulkerson algorithm
     push re-label algorithm
     minimum cost flows - cycle cancelling algorithm
- 
+
 approximation and randomized algorithms
     the vertex covering problem
     k-center clustering 
@@ -25,6 +23,10 @@ approximation and randomized algorithms
         finding the global minimum
 divide and conquer matrix multiplication: strassen's algorithm
 string matching problem - string matching with finite automata
+
+graphColoringProblem (returns a solution with a certain number of colors)
+mColoringDecisionProblem (returns whether a graph can be colored with n colors or not)
+mColoringOptimizationProblem (returns minimum number of colors required)
 
 topological sort
 bisection method
