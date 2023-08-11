@@ -8,7 +8,7 @@ use std::{
 struct Scanner {
     tokens: VecDeque<String>,
 }
- 
+
 impl Scanner {
     pub fn new() -> Self {
         let stdin = io::stdin();
@@ -31,6 +31,22 @@ impl Scanner {
 
 fn main() {
     let mut input = Scanner::new();
-    let n: i32 = input.next();
-    println!("{}", n);
+    let s: String = input.next();
+    
+    let row = (s.len() as f64).sqrt().ceil() as usize;
+    let mut op = vec![String::from(""); row];
+    
+    let mut opi = 0;
+    for i in s.chars() {
+        op[opi].push(i);
+        opi += 1;
+        if opi == row {
+            opi = 0;
+        }
+    }
+    
+    for i in op.iter() {
+        print!("{} ", i);
+    }
 }
+
