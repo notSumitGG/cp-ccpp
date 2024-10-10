@@ -13,8 +13,8 @@ Contains problems related to :
 `Dynamic_Programming`
 
 
-# Standerd Problem Solutions
-You can find solutions to standerd problems in the [`DSA`](https://github.com/sumit-modak/cp/tree/master/DSA) directory
+# Standard Problem Solutions
+You can find solutions to standard problems in the [`DSA`](https://github.com/sumit-modak/cp/tree/master/DSA) directory
 
 
 ## CP Websites
